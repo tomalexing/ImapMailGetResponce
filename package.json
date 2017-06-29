@@ -1,0 +1,35 @@
+{
+  "name": "mail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "send": "node send.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm-watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "exit": "^0.1.2",
+    "getresponse-nodejs-api": "0.0.4",
+    "imap": "^0.8.19",
+    "imap-simple": "^3.1.0",
+    "npm-watch": "^0.2.0"
+  },
+  "watch": {
+    "start": {
+      "patterns": "index.js",
+      "extensions": [
+        "js"
+      ]
+    },
+    "send": {
+      "patterns": "send.js",
+      "extensions": [
+        "js"
+      ]
+    }
+  }
+}
