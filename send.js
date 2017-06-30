@@ -14,7 +14,6 @@ fs.readFile('./body.json', 'utf8', function (err,data) {
   Object.values(dataJson).map((email,it) => {
     
     setTimeout((function(email){
-      //api.addContact('njX3Y', 'Александр', 'nickmy@yandex.ru', null, 0, {'ref':"+23133131"},function(r){console.log(r);});
       return function(){
         api.addContact('njX3Y', email.name, email.email, null, 0, {'ref':email.tel},function(r){console.log(r);});
       }
@@ -24,6 +23,5 @@ fs.readFile('./body.json', 'utf8', function (err,data) {
 
 
 
-//api.addContact('njX3Y', 'Александр', 'nickmy@yandex.ru', null, 0, {'ref':"+23133131"},function(r){console.log(r);});
 
 
